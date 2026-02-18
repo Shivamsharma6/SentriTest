@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/arrow_back"
+                android:tint="?attr/colorOnSurface" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="Add Customer"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="?attr/colorSurface"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="?attr/colorOnSurface"
+                android:inputType="textPersonName"
+                android:padding="0dp"
+                android:background="@drawable/button_background"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Email"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="textEmailAddress"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="WhatsApp Number"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerWhatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="phone"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Date of Birth"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="false"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Emergency Contact"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerEmergency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="phone"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Parent Name"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerParents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Current Address"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerCurrAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPostalAddress"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Permanent Address"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerPermAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPostalAddress"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Study Stream"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerStream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Institution"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCustomerInstitution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Comments"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/transparent"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:padding="0dp"
+                android:textColor="?attr/colorOnSurface"
+                android:textColorHint="#99FFFFFF" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAadharPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_rounded_button"
+            android:text="Upload Aadhar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCustomerPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_rounded_button"
+            android:text="Upload Photo"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSaveCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_rounded_button"
+            android:text="Save Customer"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

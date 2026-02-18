@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    card:cardCornerRadius="8dp"
+    card:cardElevation="1dp"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:padding="12dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Date & Admin -->
+        <TextView
+            android:id="@+id/tvDateAdmin"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Oct 22, 2024,\nAdmin-01"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"/>
+
+        <!-- Time Slot -->
+        <TextView
+            android:id="@+id/tvTimeSlot"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="2pm-6pm + 6pm-8pm"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"/>
+
+        <!-- Subscription Dates -->
+        <TextView
+            android:id="@+id/tvSubDates"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Sep 23, 2024\nOct 22, 2024"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"/>
+
+        <!-- Seat Info -->
+        <TextView
+            android:id="@+id/tvSeatInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginStart="8dp"
+            android:text="40, NA"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

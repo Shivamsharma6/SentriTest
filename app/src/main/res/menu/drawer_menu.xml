@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/nav_customers"
+        android:title="Customers"
+        android:icon="@drawable/ic_group"/>
+    <item android:id="@+id/nav_cards"
+        android:title="Cards"
+        android:icon="@drawable/cards"/>
+    <item android:id="@+id/nav_seats"
+        android:title="Seats"
+        android:icon="@drawable/ic_seat"/>
+    <item android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"/>
+    <item android:id="@+id/nav_payments"
+        android:title="Payments"
+        android:icon="@drawable/ic_payment"/>
+    <item android:id="@+id/nav_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications"/>
+    <item android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/ic_logout"/>
+</menu>

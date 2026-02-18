@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sentri</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="nav_open">Open navigation drawer</string>
+    <string name="nav_close">Close navigation drawer</string>
+    <string name="select_business">Select business </string>
+    <string-array name="access_levels">
+        <item>admin</item>
+        <item>manager</item>
+    </string-array>
+    <string-array name="card_payment_types">
+        <item>Credit</item>
+        <item>Debit</item>
+    </string-array>
+</resources>

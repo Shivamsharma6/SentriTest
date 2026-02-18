@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/seatRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- TOP: sticky header row -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Fixed corner cell -->
+        <TextView
+            android:id="@+id/tvCorner"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="Seat\nTime"
+            android:textSize="12sp"
+            android:background="@drawable/cell_border" />
+
+        <!-- Time header that scrolls HORIZONTALLY (synced to content) -->
+        <com.sentri.access_control.ui.ObservableHorizontalScrollView
+            android:id="@+id/hsvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:id="@+id/headerRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </com.sentri.access_control.ui.ObservableHorizontalScrollView>
+    </LinearLayout>
+
+    <!-- MIDDLE: grid area (fills remaining height) -->
+    <LinearLayout
+        android:id="@+id/gridArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <!-- Sticky left seat column; scrolls VERTICALLY (synced to content) -->
+        <com.sentri.access_control.ui.ObservableScrollView
+            android:id="@+id/svLeft"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/leftSeatColumn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </com.sentri.access_control.ui.ObservableScrollView>
+
+        <!-- Content grid: horizontal + vertical scrolling -->
+        <com.sentri.access_control.ui.ObservableHorizontalScrollView
+            android:id="@+id/hsvContent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="horizontal">
+
+            <com.sentri.access_control.ui.ObservableScrollView
+                android:id="@+id/svContent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+
+                <!-- Only the hour cells live here (NO header, NO seat label) -->
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.sentri.access_control.ui.ObservableScrollView>
+        </com.sentri.access_control.ui.ObservableHorizontalScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvUnallocatedHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:text="Unallocated Seats"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:id="@+id/hsvUnallocated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:scrollbars="horizontal">
+
+        <TableLayout
+            android:id="@+id/tableUnallocatedShifts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+</LinearLayout>

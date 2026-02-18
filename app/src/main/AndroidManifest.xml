@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+
+        <!-- allow your app to query / launch WhatsApp -->
+        <package android:name="com.whatsapp" />
+        <!-- (if you need the Business app too) -->
+        <package android:name="com.whatsapp.w4b" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sentri"
+        tools:targetApi="31">
+        <activity
+            android:name=".BusinessSeat"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerHistory"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SeatSelection"
+            android:exported="false" />
+        <activity
+            android:name=".AddBusiness"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerLeave"
+            android:exported="false"
+            android:theme="@style/Theme.Sentri" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".UserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".AddMasterUser"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".AddCustomer"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".UserNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerShift"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessPayment"
+            android:exported="false"
+            android:theme="@style/Theme.Sentri" />
+        <activity
+            android:name=".SentriPayment"
+            android:exported="false" />
+        <activity
+            android:name=".DeviceList"
+            android:exported="false" />
+        <activity
+            android:name=".DeviceSetting"
+            android:exported="false" />
+        <activity
+            android:name=".UserList"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerEnquiry"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerPayment"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerComments"
+            android:exported="false" />
+        <activity
+            android:name=".CardAssignment"
+            android:exported="false" />
+        <activity
+            android:name=".AppNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".AddUser"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".CustomerList"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

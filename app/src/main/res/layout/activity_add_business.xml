@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollAddBusiness"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Owner Photos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivOwnerPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_profile_placeholder"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bg_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner Photo"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="?attr/colorOnSurface"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="32dp">
+
+                <ImageView
+                    android:id="@+id/ivOwnerAadharPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_profile_placeholder"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/bg_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aadhar Photo"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="?attr/colorOnSurface"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Business Name -->
+        <EditText
+            android:id="@+id/etBusinessName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Address -->
+        <EditText
+            android:id="@+id/etBusinessAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Address"
+            android:inputType="textPostalAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etBusinessEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/etBusinessPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Phone"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- GST -->
+        <EditText
+            android:id="@+id/etBusinessGst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business GST"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Max Seats -->
+        <EditText
+            android:id="@+id/etBusinessMaxSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Max Seats"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Subscription Duration (days) -->
+        <EditText
+            android:id="@+id/etSubscriptionEndDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer Subscription End (days)"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Next Sequence -->
+        <EditText
+            android:id="@+id/etNextSequence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Next Sequence"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Prefix -->
+        <EditText
+            android:id="@+id/etBusinessPrefix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Prefix"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- WhatsApp Days Before Expiry -->
+        <EditText
+            android:id="@+id/etWhatsappBefore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WhatsApp Days Before Expiry"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- WhatsApp Days After Expiry -->
+        <EditText
+            android:id="@+id/etWhatsappAfter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="WhatsApp Days After Expiry"
+            android:inputType="number"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Owner Name -->
+        <EditText
+            android:id="@+id/etOwnerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Owner Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Owner Phone -->
+        <EditText
+            android:id="@+id/etOwnerPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Owner Phone"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Owner Aadhar Number -->
+        <EditText
+            android:id="@+id/etOwnerAadharNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Owner Aadhar Number"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Open Time Picker -->
+        <Button
+            android:id="@+id/btnOpenTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Open Time"
+            android:layout_marginBottom="4dp"/>
+        <TextView
+            android:id="@+id/tvOpenTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Close Time -->
+        <EditText
+            android:id="@+id/etCloseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Close Time (e.g. 18:00)"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Status -->
+        <EditText
+            android:id="@+id/etStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Status"
+            android:inputType="text"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Create Button -->
+        <Button
+            android:id="@+id/btnCreateBusiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Business"/>
+
+    </LinearLayout>
+</ScrollView>

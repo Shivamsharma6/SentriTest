@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "114019769390",
+    "project_id": "sentri-ban2r1",
+    "storage_bucket": "sentri-ban2r1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114019769390:android:3c454615f99ac202f6d3bf",
+        "android_client_info": {
+          "package_name": "com.sentri.access_control"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA798vpOSokpRWCcHS08FbgRP7ldczqJ4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#317FFF</color>
+    <color name="dark_gray">#111111</color>
+    <color name="mid_gray">#232327</color>
+    <color name="mid_warm_gray">#1F1F1F</color>
+    <color name="light_gray">#1E1E1E</color>
+    <color name="very_light_gray">#535353</color>
+    <color name="very_light_gray02">#C8C8C8</color>
+    <color name="button_gray01">#2A2B2F</color>
+    <color name="red">#FF4463</color>
+    <!-- Helpers -->
+    <color name="white_87">#DEFFFFFF</color> <!-- ~87% white -->
+    <color name="white_65">#A6FFFFFF</color> <!-- ~65% white -->
+
+</resources>

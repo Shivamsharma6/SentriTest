@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/light_gray"
+    android:padding="16dp">
+
+    <!-- User profile image (set from code using Glide or similar) -->
+    <ImageView
+        android:id="@+id/ivUserImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_avatar_placeholder"
+        android:background="@drawable/bg_circle"
+        android:layout_gravity="center"/>
+
+    <!-- Business name (centered, bold) -->
+    <TextView
+        android:id="@+id/tvDrawerBusiness"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:text="Business Name"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <!-- User email -->
+    <TextView
+        android:id="@+id/tvDrawerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email@domain.com"
+        android:textColor="#B3FFFFFF"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <!-- Access level (admin, manager, etc) -->
+    <TextView
+        android:id="@+id/tvDrawerAccessLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Access Level"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:gravity="center"/>
+</LinearLayout>

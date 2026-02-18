@@ -1,0 +1,8 @@
+<resources>
+    <!-- used to mark occupied cells so we never clear them -->
+    <item name="occupied" type="id"/>
+    <item type="id" name="selected"/>
+    <item name="customer_shift" type="id"/>
+    <item name="occupied_customer_id" type="id"/>
+
+</resources>
