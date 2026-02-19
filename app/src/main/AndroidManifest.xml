@@ -78,6 +78,9 @@
             android:name=".DeviceList"
             android:exported="false" />
         <activity
+            android:name=".DeviceDetails"
+            android:exported="false" />
+        <activity
             android:name=".DeviceSetting"
             android:exported="false" />
         <activity
