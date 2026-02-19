@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.Timestamp;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.sentri.access_control.repositories.DeviceRepository;
@@ -17,7 +18,6 @@ import com.sentri.access_control.repositories.FirestoreDeviceRepository;
 
 import java.text.DateFormat;
 import java.util.Locale;
-import java.util.concurrent.TimeUnit;
 
 public class DeviceDetails extends AppCompatActivity {
     private static final long ONLINE_THRESHOLD_MS = 20L * 60L * 1000L;
@@ -126,7 +126,7 @@ public class DeviceDetails extends AppCompatActivity {
         );
     }
 
-    private String formatTimestamp(com.google.firebase.Timestamp timestamp) {
+    private String formatTimestamp(Timestamp timestamp) {
         if (timestamp == null) {
             return "-";
         }
