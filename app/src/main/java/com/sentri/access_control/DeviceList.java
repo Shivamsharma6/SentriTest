@@ -68,7 +68,7 @@ public class DeviceList extends AppCompatActivity {
 
     private void setupRecycler() {
         adapter = new DeviceAdapter(item -> {
-            Intent intent = new Intent(DeviceList.this, DeviceSetting.class);
+            Intent intent = new Intent(DeviceList.this, DeviceDetails.class);
             intent.putExtra("businessDocId", businessId);
             intent.putExtra("deviceDocId", item.getId());
             startActivity(intent);
